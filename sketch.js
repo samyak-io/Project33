@@ -118,6 +118,17 @@ function draw() {
    text("200",578, divisionHeight + 230);
    text("200",658, divisionHeight + 230);
    text("200",738, divisionHeight + 230);
+  
+  
+   if(turn >5){
+    textSize(25);
+    fill("white");
+    text("GAME OVER",width/2,height/2);
+    gameState = "end";
+    particle = null;
+    divisions = null;
+    plinkos = null;
+  }
 }
 
 function mousePressed()
